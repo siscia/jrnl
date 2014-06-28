@@ -148,6 +148,7 @@ class Journal(object):
                 if current_entry:
                     current_entry.body += line + "\n"
 
+                
         # Append last entry
         if current_entry:
             entries.append(current_entry)

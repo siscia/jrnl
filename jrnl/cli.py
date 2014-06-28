@@ -47,6 +47,9 @@ def parse_args(args=None):
     exporting.add_argument('--decrypt', metavar='FILENAME', dest='decrypt', help='Decrypts your journal and stores it in plain text', nargs='?', default=False, const=None)
     exporting.add_argument('--edit', dest='edit', help='Opens your editor to edit the selected entries.', action="store_true")
 
+    syn = parser.add_argument_group('Syncronize', 'Syncronize your journal')
+    syn.add_argument('--github-syn')
+
     return parser.parse_args(args)
 
 
